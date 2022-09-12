@@ -55,8 +55,8 @@ public class DbConnection {
 
     public boolean addStudent(Student student) throws SQLException {
 
-        String query = "INSERT INTO student (student_name, student_class) VALUES (" + student.getName() + ", "
-                + student.getClassId() + ");";
+        /*String query = "INSERT INTO student (student_name, student_class) VALUES (" + student.getName() + ", "
+                + student.getClassId() + ");";*/
         String prepreadQuery = "INSERT INTO student (student_name, student_class) VALUES (?,?)";
 
         /*
